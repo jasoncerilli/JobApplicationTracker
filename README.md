@@ -154,7 +154,7 @@ The Lambda function automatically adds:
 - **Touch Support** - Swipe left/right on mobile devices
 - **Auto-hide Controls** - Navigation buttons hide when not needed
 
-![Archectiture Diagram](images/Job Application Tracker.drawio.png)
+![Archectiture Diagram](images/jobtracker.png)
 
 ## Browser Support
 
