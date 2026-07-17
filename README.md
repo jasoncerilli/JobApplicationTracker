@@ -175,7 +175,7 @@ The Lambda function automatically adds:
 - Why Lambda instead of EC2? Serverless = no server management, scales automatically, pay-per-use
 - Why DynamoDB? Schema-less, fast key-value lookups, perfect for CRUD at this scale
 - Why API Gateway as the entry point? It decouples the frontend from the backend, handles auth, rate limiting, and routing
-- IAM is not optional — always show it in diagrams even if it's invisible during operation
+- IAM is not optional 
 
 ## Browser Support
 
