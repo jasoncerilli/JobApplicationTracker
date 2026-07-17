@@ -154,7 +154,28 @@ The Lambda function automatically adds:
 - **Touch Support** - Swipe left/right on mobile devices
 - **Auto-hide Controls** - Navigation buttons hide when not needed
 
+
 ![Archectiture Diagram](images/jobtracker.png)
+
+## End-to-End Flow
+
+1. User opens the frontend web app hosted on **AWS Amplify**
+2. User action (create/read/update application record) triggers an **HTTPS request** to **Amazon API Gateway**
+3. API Gateway routes the request to the appropriate **AWS Lambda** function
+4. Lambda executes the business logic (validate input, format data)
+5. Lambda performs a **read or write operation** on **Amazon DynamoDB**
+6. DynamoDB returns the result to Lambda
+7. Lambda formats the response and returns it to API Gateway
+8. API Gateway sends the HTTP response back to Amplify frontend
+9. Frontend updates the UI with the result
+10. **AWS IAM** enforces least-privilege permissions between Lambda and DynamoDB throughout
+
+## Key Points
+
+- Why Lambda instead of EC2? Serverless = no server management, scales automatically, pay-per-use
+- Why DynamoDB? Schema-less, fast key-value lookups, perfect for CRUD at this scale
+- Why API Gateway as the entry point? It decouples the frontend from the backend, handles auth, rate limiting, and routing
+- IAM is not optional — always show it in diagrams even if it's invisible during operation
 
 ## Browser Support
 
