@@ -41,7 +41,7 @@ A modern, responsive web application for tracking job applications with a beauti
 1. **Create DynamoDB Table:**
    - Table name: `job-applications`
    - Partition key: `applicationId` (String)
-
+![Create Table](images/createtable.png)
 2. **Deploy Lambda Function:**
    ```python
    import json
@@ -113,7 +113,7 @@ A modern, responsive web application for tracking job applications with a beauti
 1. Connect your repository to AWS Amplify
 2. Amplify will automatically detect this as a static site
 3. Deploy with default settings
-
+[!Amplify](images/amplify3.png)
 #### Other Static Hosts
 - **Netlify**: Drag and drop the files
 - **Vercel**: Connect repository or upload files
