@@ -100,6 +100,9 @@ A modern, responsive web application for tracking job applications with a beauti
    - Connect to Lambda function
    - Enable CORS
 
+![Configure API](images/configureapi.png)
+![CORS](images/CORS.png)
+
 4. **Frontend Configuration:**
    - API Gateway endpoint is already configured in `app.js`
    - The app will connect to the same backend as the main version
@@ -153,7 +156,6 @@ The Lambda function automatically adds:
 - **Dot Indicators** - Visual dots showing current position and total slides
 - **Touch Support** - Swipe left/right on mobile devices
 - **Auto-hide Controls** - Navigation buttons hide when not needed
-
 
 ![Archectiture Diagram](images/jobtracker.png)
 
