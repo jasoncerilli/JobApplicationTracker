@@ -224,3 +224,4 @@ MIT License - Perfect for personal, educational, or portfolio projects!
 *This project was built with guidance from TechByEdwina, helping developers create real-world AWS applications that showcase job-ready skills.*
 
 Medium: https://medium.com/@jaycerilli/building-a-serverless-job-application-tracker-on-aws-bfa35ccbeeb7
+LinkedIn: www.linkedin.com/in/jason-cerilli-b0a74842
